@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Оленин](https://up.htmlacademy.ru/htmlcss-individual/2/user/263895).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Зиновьев] (https://htmlacademy.ru/profile/id198751).
 
 ---
 
