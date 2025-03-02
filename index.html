@@ -14,7 +14,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link " aria-current="page" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -33,15 +33,15 @@
               <span class="likes-number">12</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="button button-catalog" href="catalog.html">Хочу сюда</a>
-          </li>
-        </ul>
+          </ul>
       </nav>
+      <a class="button button-catalog" href="catalog.html">Хочу сюда</a>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Welcome to the gorgeus. Sedona - Because, the grand canyon sacksa</h1>
-      <img class="logo" src="" alt="Welcome to the gorgeus. Sedona - Because, the grand canyon sacksa">
+      <header>
+      <h1 class="visually-hidden">Седона</h1>
+      <img class="logo" src=""  alt="Welcome to the gorgeus. Sedona - Because, the grand canyon sacksa">
+      </header>
       <section class="description">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="description-sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -50,8 +50,6 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-comparison">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="advantages-item">
             <img class="advantages-img" src="" alt="Вид на дома города Sedona">
           </li>
           <li class="advantages-item">
@@ -67,48 +65,45 @@
             <p class="advantages-comparison">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
-            <img class="advantages-img" src="" alt="Вид на Гранд каньон">
-          </li>
-          <li class="advantages-item">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-comparison"></p>
+            <p class="advantages-comparison">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="advantages-img" src="" alt="Вид на горы Седоны">
           </li>
         </ul>
       </section>
-
       <section class="description">
         <h2 class="description-sedona">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="advantages-comparison">Опытный персонал и качественное обслуживание!</p>
         <ul class="description-accommodation-list">
           <li class="description-accommodation-item">
-            <h2 class="description-accommodation-title">Жильё</h2>
+            <h3 class="description-accommodation-title">Жильё</h2>
             <p class="description-accommodation-comparison">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="description-accommodation-item">
-            <h2 class="description-accommodation-title">Еда</h2>
+            <h3 class="description-accommodation-title">Еда</h2>
             <p class="description-accommodation-comparison">Всегда заказывайте топовый фирменный бургер, вы не
               разочаруетесь!</p>
           </li>
           <li class="description-accommodation-item">
-            <h2 class="description-accommodation-title">Сувениры</h2>
+            <h3 class="description-accommodation-title">Сувениры</h2>
             <p class="description-accommodation-comparison">Не только китайского, но и настоящего местного производства!
             </p>
           </li>
         </ul>
       </section>
-
       <section class="booking">
-        <h2 class="booking-interest">Заинтересовались?</h2>
+        <h2 class="visually-hidden">Сервис для поиска гостиниц Седоны</h2>
+        <p class="booking-interest">Заинтересовались?</p>
         <p class="booking-travel-date">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц
           в Седоне</p>
-        <a class="button button-booking" href="#">ПОИСК ГОСТИНИЦЫ В Седоне</a>
+        <a class="button button-booking" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="sending" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="appointment-email">Укажите ваш e-mail</label>
-          <input type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail">
+          <input type="text" id="appointment-email" name="appointment-email" placeholder="Ваш e-mail" required>
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -132,8 +127,6 @@
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
         <img class="academy-logo" src="" alt="Логотип HTML academy">
       </a>
-      </section>
     </footer>
   </body>
-
 </html>
