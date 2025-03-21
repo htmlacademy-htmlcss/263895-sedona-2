@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,18 +18,65 @@
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  font-family: "PT Sans" sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   font-style: normal;
   color: #333333;
   background-color: #f2f2f2;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 64px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.navigation-logo {
+  width: 138px;
+  min-height: 64px;
+  overflow: hidden;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-list {
+  width: 339px;
+  min-height: 64px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  align-items: center;
+  width: 268px;
 }
 
 .navigation-link {
@@ -41,36 +88,71 @@ body {
   color: #000000;
 }
 
+.main-container {
+  flex-grow: 1;
+}
 
-.button-catalog {
+.sedona-Arizona {
+  text-align: center;
+  width: 1200px;
+  min-height: 261px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-button {
+  padding: 8px 50px;
   font-size: 16px;
-  font-weight: 700;
   line-height: 20px;
-  background-color: #756157;
+}
+
+.button {
+  display: inline-block;
   text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 700;
   text-decoration: none;
-  color: #ffffff;
+  border: none;
+  color: #FFFfff;
+  background-color: #756157;
+  text-align: center;
 }
 
 .hero {
-  background-image: url("../images/divider.svg"), url("../images/index-bg.jpg");
+  background-image: url(../images/divider.svg), url("../images/index-bg.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
+  width: 1200px;
+  min-height: 485px;
+  overflow: hidden;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
 }
 
 
 
 .city-sedona {
+  font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0%;
 }
 
 .reasons {
+  font-family: "PT Sans", sans-serif;
   color: rgb(51, 51, 51);
   font-size: 22px;
   font-weight: 400;
@@ -81,17 +163,13 @@ body {
 
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
-}
-
-.advantages-item-one {
-  color: rgba(130, 179, 211, 1);
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 385px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 
@@ -105,12 +183,43 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-text {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  min-height: 385px;
+  overflow: hidden;
+}
+
 .advantages-dark-item {
+  display: flex;
+  font-family: "PT Sans", sans-serif;
   background-color: #82b3d3;
   color: #ffffff;
+  width: 1200px;
+  min-height: 385px;
+  overflow: hidden;
+
+}
+
+.advantages-light-item {
+  font-family: "PT Sans", sans-serif;
+  background-color: #83B3D31F;
+  color: #000000;
+  width: 400px;
+}
+
+.advantages-middle-item {
+  font-family: "PT Sans", sans-serif;
+  background-color: #83B3D333;
+  color: #000000;
+  width: 400px;
 }
 
 .advantages-title {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 28px;
   font-size: 24px;
@@ -119,6 +228,7 @@ body {
 }
 
 .advantages-comparison-dark {
+  font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   font-weight: 400;
   line-height: 21px;
@@ -127,6 +237,7 @@ body {
 }
 
 .advantages-comparison {
+  font-family: "PT Sans", sans-serif;
   color: #333333;
   font-weight: 400;
   line-height: 21px;
@@ -134,21 +245,45 @@ body {
   text-align: center;
 }
 
-.advantages-light-item {
-  background-color: #83B3D31F;
-  color: #000000;
+.description-accommodation-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 
-.advantages-middle-item {
-  background-color: #83B3D333;
-  color: #000000;
+.comfort-coziness {
+  width: 1200px;
+  min-height: 246px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.additions-item {
+  display: flex;
+  width: 400px;
+  min-height: 385px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .additions-item-middle {
+  font-family: "PT Sans", sans-serif;
   background-color: #83B3D31F;
+  display: flex;
+  width: 400px;
+  min-height: 385px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .additions-title {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 28px;
   font-size: 24px;
@@ -157,6 +292,7 @@ body {
 }
 
 .additions-comparison {
+  font-family: "PT Sans", sans-serif;
   color: #333333;
   font-weight: 400;
   line-height: 21px;
@@ -164,7 +300,19 @@ body {
   text-align: center;
 }
 
+.booking {
+  background-color: #FFFFFF;
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  min-height: 406px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
 .booking-interest {
+  font-family: "PT Sans", sans-serif;
   color: #000000;
   font-weight: 700;
   line-height: 36px;
@@ -174,6 +322,7 @@ body {
 }
 
 .booking-travel-date {
+  font-family: "PT Sans", sans-serif;
   color: #333333;
   font-weight: 400;
   line-height: 26px;
@@ -183,15 +332,38 @@ body {
 
 
 .mailing {
-  background-image: url("/images/Subscribe_3.jpg");
+  display: flex;
+  background-image: url("/images/Subscribe_2.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
+  width: 1200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 414px;
+  overflow: hidden;
+}
+
+.mailing-2 {
+  display: flex;
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  width: 1200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 414px;
+  overflow: hidden;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0 auto;
 }
 
 .subscribe {
   font-family: "PT Sans", sans-serif;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: 700;
   line-height: 36px;
   font-size: 30px;
@@ -201,7 +373,7 @@ body {
 
 .inform {
   font-family: "PT Sans", sans-serif;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: 400;
   line-height: 26px;
   font-size: 22px;
@@ -209,10 +381,29 @@ body {
 }
 
 .yomail {
+  font-family: "PT Sans", sans-serif;
   color: #F2F2F2;
   line-height: 26px;
   font-size: 22px;
   text-align: center;
+}
+
+.search-button {
+  width: 376px;
+  min-height: 52px;
+  overflow: hidden;
+  text-align: center;
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.sending-text {
+  width: 452px;
+}
+
+.sending {
+  display: flex;
 }
 
 .button_mail {
@@ -224,6 +415,7 @@ body {
   color: #FFFFFF;
   font-weight: 700;
   text-transform: uppercase;
+  width: 232px;
 }
 
 .contacts-address-phone {
@@ -233,25 +425,33 @@ body {
   font-size: 40px;
   font-weight: 400;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
-.inner-header-title {
+.social-list {
+  display: flex;
+}
+
+/**.inner-header-title {
   font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   line-height: 78px;
   font-size: 60px;
   font-weight: 700;
-}
+  }**/
 
 .inner-header {
   background-image: url("/images/Subscribe_2.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
+  width: 1200px;
+  min-height: 412px;
+  margin: 0 auto;
 }
 
-.breadcrumbs-link{
+.breadcrumbs-link {
   font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   line-height: 21px;
@@ -259,7 +459,13 @@ body {
   font-weight: 400;
 }
 
-.catalog-filter-title{
+.filter-products {
+  display: flex;
+  width: 1060px;
+  min-height: 160px;
+}
+
+.catalog-filter-title {
   font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   line-height: 24px;
@@ -267,7 +473,48 @@ body {
   font-weight: 700;
 }
 
-.control-input{
+.catalog-filter-group-1 {
+  width: 150px;
+  min-height: 157px;
+  border: none;
+}
+
+.catalog-filter-group-2 {
+  width: 150px;
+  min-height: 157px;
+  border: none;
+}
+
+.catalog-filter-group-3 {
+  display: flex;
+  width: 288px;
+  min-height: 160px;
+  border: none;
+}
+
+.filter-container-buttons {
+  display: flex;
+  width: 191px;
+  min-height: 104px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.catalog-filter-list{
+  color: #ffffff ;
+  list-style: none;
+  }
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  }
+
+.control-input {
   font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   line-height: 23px;
@@ -275,7 +522,7 @@ body {
   font-weight: 400;
 }
 
-.appointment-money{
+.appointment-money {
   font-family: "PT Sans", sans-serif;
   color: #000000;
   line-height: 24px;
@@ -283,7 +530,7 @@ body {
   font-weight: 400;
 }
 
-.filter-button{
+.filter-button {
   font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   line-height: 20px;
@@ -303,7 +550,7 @@ body {
   text-transform: uppercase;
 }
 
-.catalog-title{
+.catalog-title {
   font-family: "PT Sans", sans-serif;
   color: #000000;
   line-height: 36px;
@@ -312,23 +559,24 @@ body {
   text-transform: uppercase;
 }
 
-.select-control{
+.select-control {
   font-family: "PT Sans", sans-serif;
   color: #333333;
   line-height: 21px;
   font-size: 18px;
   font-weight: 400;
 }
-.card-title{
+
+.card-title {
   font-family: "PT Sans", sans-serif;
   color: #000000;
   line-height: 28px;
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
-  }
+}
 
-.card-description{
+.card-description {
   font-family: "PT Sans", sans-serif;
   color: #333333;
   line-height: 21px;
@@ -336,7 +584,7 @@ body {
   font-weight: 400;
 }
 
-.card-price{
+.card-price {
   font-family: "PT Sans", sans-serif;
   color: #333333;
   line-height: 21px;
@@ -355,7 +603,7 @@ body {
   text-transform: uppercase;
 }
 
-.card-favourite{
+.card-favourite {
   font-family: "PT Sans", sans-serif;
   text-align: center;
   font-size: 16px;
@@ -366,7 +614,7 @@ body {
   text-transform: uppercase;
 }
 
-.card-favourite2{
+.card-favourite2 {
   font-family: "PT Sans", sans-serif;
   text-align: center;
   font-size: 16px;
@@ -377,7 +625,7 @@ body {
   text-transform: uppercase;
 }
 
-.card-rating{
+.card-rating {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -386,26 +634,31 @@ body {
   text-transform: uppercase;
 }
 
-.pagination-link_active{
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: 700;
-  text-transform: uppercase;
+.pagination-list {
+  display: flex;
+  list-style: none;
+  width: 1060px;
+  min-height: 60px;
+  margin: 0 auto;
 }
 
-.pagination-link{
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 36px;
+.pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #82B3D3;
   color: #FFFFFF;
-  font-weight: 700;
-  text-transform: uppercase;
-  background: #82B3D3;
+  border-radius: 4px;
 }
 
-.subscribe-2{
+.pagination-item.pagination-item-active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.subscribe-2 {
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -413,16 +666,36 @@ body {
   text-transform: uppercase;
 }
 
-.information{
+.information {
   color: #333333;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  }
+}
 
-  .button{
+.favourites-link {
+  color: #7DB54F;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  min-height: 120px;
+  overflow: hidden;
+}
+
+/*.button{
     color: #FFFFFF;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
