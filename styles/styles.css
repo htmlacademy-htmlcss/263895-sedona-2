@@ -63,6 +63,16 @@ body {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .left-list {
   width: 339px;
   min-height: 64px;
@@ -226,6 +236,13 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-border-line {
+  border-bottom: 2px solid #0000004D;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+}
+
 .advantages-comparison-dark {
   font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
@@ -255,6 +272,9 @@ body {
 }
 
 .comfort-coziness {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 1200px;
   min-height: 246px;
   overflow: hidden;
@@ -268,6 +288,8 @@ body {
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
+  background-color: #ffffff;
+  align-items: center;
 }
 
 .additions-item-middle {
@@ -279,6 +301,7 @@ body {
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .additions-title {
@@ -399,10 +422,13 @@ body {
 
 .sending-text {
   width: 452px;
+
 }
 
 .sending {
   display: flex;
+  width: 684px;
+  min-height: 52px;
 }
 
 .button_mail {
@@ -464,6 +490,22 @@ body {
   min-height: 160px;
 }
 
+.reset-filter-button {
+  background-color: transparent;
+}
+
+.catalog {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #FFFFFF;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .catalog-filter-title {
   font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
@@ -500,10 +542,11 @@ body {
   justify-content: space-evenly;
 }
 
-.catalog-filter-list{
-  color: #ffffff ;
+.catalog-filter-list {
+  color: #ffffff;
   list-style: none;
-  }
+  width: 150px;
+}
 
 .catalog-filter {
   display: flex;
@@ -511,7 +554,7 @@ body {
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
-  }
+}
 
 .control-input {
   font-family: "PT Sans", sans-serif;
@@ -519,6 +562,40 @@ body {
   line-height: 23px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.catalog-hostel {}
+
+.product-list-one {
+  display: flex;
+  list-style: none;
+  width: 340px;
+  min-height: 438px;
+  border: 1px solid #E5E5E5;
+}
+
+.product-list-two {
+  list-style: none;
+  width: 340px;
+  min-height: 438px;
+  border: 1px solid #E5E5E5;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 20px;
+  width: 340px;
+}
+
+.name-hostel {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  min-height: 21px;
 }
 
 .appointment-money {
@@ -531,9 +608,13 @@ body {
 
 .filter-button {
   font-family: "PT Sans", sans-serif;
-  color: #FFFFFF;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .active-filter-button {
@@ -563,7 +644,7 @@ body {
   font-weight: 400;
 }
 
-.card-title {
+.catalog-card-link {
   font-family: "PT Sans", sans-serif;
   color: #000000;
   line-height: 28px;
@@ -597,6 +678,19 @@ body {
   background-color: #756157;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+  width: 140px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.button-hostel {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 36px;
+  padding: 20px;
+  justify-content: space-around;
 }
 
 .card-favourite {
@@ -608,6 +702,10 @@ body {
   background-color: #82B3D3;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+  width: 140px;
+  height: 36px;
+  border-radius: 4px;
 }
 
 .card-favourite2 {
@@ -620,6 +718,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.raiting {}
 
 .card-rating {
   font-family: "PT Sans", sans-serif;
