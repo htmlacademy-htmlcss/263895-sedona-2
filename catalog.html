@@ -13,7 +13,7 @@
         <a class="navigation-logo" href="index.html" aria-current="page">
           <img class="page-header-logo" src="./images/logo.svg" width="140" height="70" alt="Логотип City of Sedona">
         </a>
-        <ul class="navigation-list left-list">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link " aria-current="page" href="index.html">Главная</a>
           </li>
@@ -24,14 +24,15 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
+        <ul class="user-navigation-list">
+          <li class="navigation-item-user">
+            <a class="user-navigation-link search" href="#">
+              <span class="visually-hidden">Поиск</span></a>
               <span class="likes-number">12</span>
+          </li>
+          <li class="navigation-item-user">
+            <a class="user-navigation-link " href="#">
+              <span class="like-link">Избранное</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -42,7 +43,8 @@
     </header>
     <main class="main-inner" data-test="main">
       <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <div class="header-hotel">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -51,6 +53,7 @@
             <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
+      </div>
         <section class="filter-products" data-test=" filter">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group-1">
@@ -58,19 +61,19 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control" for="pool">
-                    <input class="control-input" type="checkbox" name="pool" checked>
+                    <input class="control-input" id="pool" type="checkbox" name="pool" checked>
                     Бассейн
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control" for="parking">
-                    <input class="control-input" type="checkbox" name="parking" checked>
+                    <input class="control-input" id="parking" type="checkbox" name="parking" checked>
                     Парковка
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control" for="wifi">
-                    <input class="control-input" type="checkbox" name="wifi">
+                    <input class="control-input" id="wifi" type="checkbox" name="wifi">
                     Wi-fi
                   </label>
                 </li>
@@ -80,20 +83,20 @@
               <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control" for="product-group">
-                    <input class="control-input" type="radio" name="product-group" value="hotel" checked>
+                  <label class="control" for="hotel">
+                    <input class="control-input" id="hotel" type="radio" name="hotel" value="hotel" checked>
                     Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control" for="product-group">
-                    <input class="control-input" type="radio" name="product-group" value="motel">
+                  <label class="control" for="motel">
+                    <input class="control-input" type="radio" id="motel" name="motel" value="motel">
                     Мотель
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control" for="product-group">
-                    <input class="control-input" type="radio" name="product-group" value="apartament">
+                  <label class="control" for="apartament">
+                    <input class="control-input" type="radio" id="apartament" name="apartament" value="apartament">
                     Апартаменты
                   </label>
                 </li>
@@ -101,11 +104,11 @@
             </fieldset>
             <fieldset class="catalog-filter-group-3">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label for="appointment-money">От: </label>
-              <input type="number" id="appointment-money" name="appointment-money" placeholder="0" min="0" max="9000"
+              <label class="price-minimal" for="appointment-money">От: </label>
+              <input class="price-minimal-input" type="number" id="appointment-money" name="appointment-money" placeholder="0" min="0" max="9000"
                 step="1">
-              <label for="appointment-money">До: </label>
-              <input type="number" id="appointment-money1" name="appointment-money" placeholder="9000" min="0"
+              <label class="price-maximal" for="appointment-money">До: </label>
+              <input class="price-maximal-input" type="number" id="appointment-money1" name="appointment-money" placeholder="9000" min="0"
                 max="9000" step="1">
             </fieldset>
             <div class="filter-container-buttons">
@@ -264,8 +267,8 @@
         </section>
       </div>
       <section class="mailing-2">
-        <h2 class="subscribe">Подпишитесь на рассылку</h2>
-        <p class="inform">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="subscribe-catalog">Подпишитесь на рассылку</h2>
+        <p class="inform-catalog">Только полезная информация и никакого спама,</br> честное бойскаутское!</p>
         <form class="sending" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden yomail" for="appointment-email"></label>
           <input class='sending-text' type="text" id="appointment-email" name="appointment-email"
