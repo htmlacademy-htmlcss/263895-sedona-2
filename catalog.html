@@ -47,7 +47,12 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <span class="visually-hidden">Стрелка</span>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
@@ -56,7 +61,7 @@
       </div>
         <section class="filter-products" data-test=" filter">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group-1">
+            <fieldset class="field-group catalog-filter-group-1">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -79,7 +84,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group-2">
+            <fieldset class="field-group catalog-filter-group-2">
               <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -102,14 +107,19 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group-3">
+            <fieldset class="field-group catalog-filter-group-3">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label class="price-minimal" for="appointment-money">От: </label>
-              <input class="price-minimal-input" type="number" id="appointment-money" name="appointment-money" placeholder="0" min="0" max="9000"
-                step="1">
-              <label class="price-maximal" for="appointment-money">До: </label>
-              <input class="price-maximal-input" type="number" id="appointment-money1" name="appointment-money" placeholder="9000" min="0"
+             <div class="filter-input">
+              <div class="filter-item-input">
+              <label class="price-label" for="appointment-money">от</label>
+              <input class="price-input" type="text" id="appointment-money" name="appointment-money" placeholder="0" min="0" max="9000"
+                step="1"></div>
+              <div class="filter-item-input">
+              <label class="price-label" for="appointment-money">до</label>
+              <input class="price-input" type="text" id="appointment-money1" name="appointment-money" placeholder="9000" min="0"
                 max="9000" step="1">
+              </div>
+            </div>
             </fieldset>
             <div class="filter-container-buttons">
               <button class="filter-button active-filter-button" type="submit">Применить</button>
@@ -246,7 +256,7 @@
         <section>
           <ol class="pagination-list">
             <li class="pagination-item pagination-item-active ">
-              <a class="pagination-link" href="#">1</a>
+              <a class="pagination-link pagination-link-active" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -258,10 +268,10 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item pagination-item-active">
-              <span class="pagination-link">...</span>
+              <span class="pagination-link pagination-link-more">...</span>
             </li>
             <li class="pagination-item" value="10">
-              <a class="pagination-link" href="#">10</a>
+              <a class="pagination-link " href="#">10</a>
             </li>
           </ol>
         </section>
