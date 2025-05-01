@@ -44,7 +44,7 @@ body {
 
 .page-header ul {
   list-style: none;
-  margin: 0;
+  margin: -3px 0 0 0;
   padding: 0;
 }
 
@@ -175,7 +175,7 @@ li.navigation-item-buttom {
   background-color: #7DB54F;
   position: absolute;
   top: 11px;
-  left: 65px;
+  left: 62px;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -516,6 +516,7 @@ li.navigation-item-buttom {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: -2px;
+  margin-left: -4px;
 }
 
 .subscribe-catalog {
@@ -616,8 +617,9 @@ li.navigation-item-buttom {
   display: flex;
   width: 684px;
   min-height: 52px;
-  margin-top: -60px;
-  margin-bottom: 32px;
+  margin-top: -33px;
+  margin-bottom: 1px;
+  margin-left: -3px;
 }
 
 .button_mail {
