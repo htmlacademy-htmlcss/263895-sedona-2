@@ -84,6 +84,13 @@ li.navigation-item-buttom {
   z-index: 1;
 }
 
+.navigation-logo:focus,
+.navigation-logo:focus-visible {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+  outline-offset: 2px;
+}
+
 .navigation-list {
   display: flex;
   list-style: none;
@@ -918,8 +925,6 @@ li.navigation-item-buttom {
   text-decoration: none;
 }
 
-.filter-products {}
-
 .reset-filter-button:hover {
   color: #ffffff;
   background-color: transparent;
@@ -1278,6 +1283,7 @@ li.navigation-item-buttom {
   padding: 8px 50px;
 }
 
+
 .filter-button:focus {
   outline: solid #68A2CA;
 }
@@ -1288,10 +1294,17 @@ li.navigation-item-buttom {
   font-size: 16px;
   line-height: 20px;
   background-color: #82B3D3;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 8px 50px;
   margin-bottom: 32px;
+}
+
+.filter-button:focus,
+.filter-button:active {
+  outline: none;
+  box-shadow: none;
+  transform: none;
 }
 
 .active-filter-button:hover,
