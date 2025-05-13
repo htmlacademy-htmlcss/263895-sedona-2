@@ -12,7 +12,7 @@
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" aria-current="page" href="./index.html">
-          <img class="page-header-logo" src="./images/logo.svg" width="140" height="70" href alt="Логотип City of Sedona">
+          <img class="page-header-logo" src="./images/logo.svg" width="140" height="70" alt="Логотип City of Sedona">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -78,6 +78,7 @@
           </ul>
         </div>
         <section class="filter-products" data-test=" filter">
+          <h2 class="visually-hidden">Фильтры поиска</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="field-group catalog-filter-group-1">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -131,12 +132,12 @@
                 <div class="filter-item-input">
                   <label class="price-label" for="appointment-money">от</label>
                   <input class="price-input" type="text" id="appointment-money" name="appointment-money" placeholder="0"
-                    min="0" max="9000" step="1">
+                    >
                 </div>
                 <div class="filter-item-input">
                   <label class="price-label" for="appointment-money">до</label>
                   <input class="price-input" type="text" id="appointment-money1" name="appointment-money"
-                    placeholder="9000" min="0" max="9000" step="1">
+                    placeholder="9000">
                 </div>
               </div>
               <div class="range">
@@ -188,8 +189,10 @@
                 </a>
               </li>
             </ul>
+            </div>
         </section>
         <section class="catalog-hostel">
+          <h2 class="visually-hidden">Результаты поиска</h2>
           <ul class="product-list-one">
             <li class="product-card">
               <a class="catalog-card-link" href="#">
@@ -208,7 +211,7 @@
               <div class="raiting">
                 <p class="stars">
                   <span class="visually-hidden"> Отель 4 звезды</span>
-                  <img class="four-star" src="./images/stars.svg" alt="Звезды">
+                  <span class="four-star"></span>
                 </p>
                 <p class="card-rating">Рейтинг: 8,5</p>
               </div>
@@ -230,7 +233,7 @@
               <div class="raiting">
                 <p class="stars">
                   <span class="visually-hidden"> Отель 4 звезды</span>
-                  <img class="four-star" src="./images/stars.svg" alt="Звезды">
+                  <span class="four-star"></span>
                 </p>
                 <p class="card-rating">Рейтинг: 9,2</p>
               </div>
@@ -252,7 +255,7 @@
               <div class="raiting">
                 <p class="stars">
                   <span class="visually-hidden"> Отель 3 звезды</span>
-                  <img class="four-star" src="./images/three-star.svg" alt="Звезды">
+                  <span class="three-star"></span>
                 </p>
                 <p class="card-rating">Рейтинг: 6,9</p>
               </div>
@@ -274,7 +277,7 @@
               <div class="raiting">
                 <p class="stars">
                   <span class="visually-hidden"> Отель 2 звезды</span>
-                  <img class="four-star" src="./images/two-star.svg" alt="Звезды">
+                  <span class="two-star"></span>
                 </p>
                 <p class="card-rating">Рейтинг: 5,0</p>
               </div>
@@ -282,6 +285,7 @@
           </ul>
         </section>
         <section class="numbering">
+          <h2 class="visually-hidden">Навигация по страницам</h2>
           <ol class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link pagination-link-active">1</a>
@@ -303,10 +307,9 @@
             </li>
           </ol>
         </section>
-      </div>
-      <section class="mailing-2">
+        <section class="mailing-2">
         <h2 class="subscribe-catalog">Подпишитесь на рассылку</h2>
-        <p class="inform-catalog">Только полезная информация и никакого спама,</br> честное бойскаутское!</p>
+        <p class="inform-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="sending" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden yomail" for="appointment-email"></label>
           <input class='sending-text' type="text" id="appointment-email" name="appointment-email"
@@ -314,7 +317,6 @@
           <button class="button_mail" type="submit">Подписаться</button>
         </form>
       </section>
-      </div>
     </main>
     <footer class="page-footer" data-test="filter">
       <ul class="social-list">
@@ -324,7 +326,7 @@
               height="15" fill="none" viewBox="0 0 25 15">
               <path fill="#83B3D3" fill-rule="evenodd"
                 d="M24.116 1.804c.166-.546 0-.948-.795-.948h-2.625c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.19-.418-.738V1.804c0-.656-.184-.948-.74-.948H9.817c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513V7.76c0 .833-.153.984-.487.984-.89 0-3.055-3.21-4.34-6.885-.249-.715-.5-1.003-1.172-1.003H1.566c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551 2.17 3.06 5.225 4.72 8.008 4.72 1.67 0 1.875-.369 1.875-1.004V11.54c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667 1.78 1.75 2.073 2.533 3.075 2.533h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.49-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
-                fill="#83B3D3" clip-rule="evenodd" />
+                clip-rule="evenodd" />
             </svg>
             <span class="visually-hidden">Вконтакте</span></a>
         </li>
@@ -334,7 +336,7 @@
               height="16" fill="none" viewBox="0 0 18 16">
               <path fill="#83B3D3"
                 d="M16.785.956.84 7.104C-.248 7.541-.24 8.148.64 8.42l4.094 1.277 9.472-5.976c.448-.272.857-.126.52.173l-7.673 6.925H7.05l.002.001-.283 4.22c.414 0 .597-.19.829-.414l1.988-1.934 4.136 3.055c.762.42 1.31.205 1.5-.706l2.715-12.795c.278-1.114-.425-1.618-1.153-1.29Z"
-                fill="#83B3D3" />
+                />
             </svg>
             <span class="visually-hidden">Телеграм</span></a>
         </li>
