@@ -335,14 +335,12 @@ li.navigation-item-buttom {
 }
 
 /* Чередующиеся серые блоки */
-.advantages-list li:nth-child(odd) .advantages-light-item {
-  background: rgba(131, 179, 211, 0.12);
-  /* Светло-серый */
+.advantages-list .advantages-light-item:nth-child(odd) {
+    background-color: rgba(131, 179, 211, 0.12); /* Светло-серый */
 }
 
-.advantages-list li:nth-child(even) .advantages-light-item {
-  background: rgba(131, 179, 211, 0.2);
-  /* Темно-серый */
+.advantages-list .advantages-light-item:nth-child(even) {
+    background-color: rgba(131, 179, 211, 0.2); /* Темно-серый */
 }
 
 /* Для блока с реверсом (Мост Дьявола) */
