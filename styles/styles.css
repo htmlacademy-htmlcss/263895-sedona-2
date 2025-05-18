@@ -289,7 +289,6 @@ li.navigation-item-buttom {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -329,18 +328,8 @@ li.navigation-item-buttom {
   margin-top: 21px;
 }
 
-/* Основной синий фон */
-.advantages-dark-item {
-  background: #82B3D3;
-}
-
-/* Чередующиеся серые блоки */
-.advantages-list .advantages-light-item:nth-child(odd) {
-    background-color: rgba(131, 179, 211, 0.12); /* Светло-серый */
-}
-
-.advantages-list .advantages-light-item:nth-child(even) {
-    background-color: rgba(131, 179, 211, 0.2); /* Темно-серый */
+.advantages-simple-item:nth-child(odd){
+  background-color: #82B3d31f;
 }
 
 /* Для блока с реверсом (Мост Дьявола) */
@@ -362,14 +351,12 @@ li.navigation-item-buttom {
 
 .advantages-light-item {
   font-family: "PT Sans", sans-serif;
-  background-color: #83B3D31F;
   color: #000000;
   width: 400px;
 }
 
 .advantages-middle-item {
   font-family: "PT Sans", sans-serif;
-  background-color: #83B3D333;
   color: #000000;
   width: 400px;
 }
@@ -440,7 +427,7 @@ li.navigation-item-buttom {
 
 .description-accommodation-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -541,7 +528,7 @@ li.navigation-item-buttom {
   overflow: hidden;
   color: #000000;
   background-color: #FFFFFF;
-  margin-top: 63px;
+  margin-top: 57px;
   margin-bottom: -62px;
 }
 
@@ -1111,7 +1098,7 @@ li.navigation-item-buttom {
 }
 
 .advantages-icon-housing {
-  background-image: url('../images/Vector.svg');
+  background-image: url('../images/vector.svg');
 }
 
 .advantages-icon-food {
@@ -1299,7 +1286,7 @@ li.navigation-item-buttom {
   flex-direction: column;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 20px;
+  padding: 19px;
   width: 340px;
   border: 1px solid #E5E5E5;
 }
@@ -1635,6 +1622,7 @@ li.navigation-item-buttom {
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .pagination-link {
@@ -1736,7 +1724,7 @@ li.navigation-item-buttom {
 
 .modal-container {
   position: fixed;
-  top: -4px;
+  top: 0;
   left: 0;
   display: flex;
   width: 100%;
@@ -1760,8 +1748,7 @@ li.navigation-item-buttom {
   background-color: #FFFFFF;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-  margin-top: 399px;
-}
+  }
 
 .modal-container-wrap {
   position: relative;
@@ -2116,7 +2103,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 /* Запрет переноса телефона */
 .contacts-address-phone {
-  white-space: nowrap;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
